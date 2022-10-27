@@ -14,8 +14,8 @@ export class MyArray {
     }
 
     find(value: Number): boolean {
-        let index;
-        for (index = 0; index < this.array.length; index++) {
+        let index: number;
+        for (index = 0; index < this.elements; index++) {
             if (this.array[index] === value) {
                 break;
             }
@@ -27,8 +27,8 @@ export class MyArray {
     }
 
     delete(value: Number): boolean {
-        let index;
-        for (index = 0; index < this.array.length; index++) {
+        let index: number;
+        for (index = 0; index < this.elements; index++) {
             if (this.array[index] === value) {
                 break;
             }
@@ -36,7 +36,7 @@ export class MyArray {
         if (index === this.elements) {
             return false;
         }
-        let indexToMove;
+        let indexToMove: number;
         for (indexToMove = index; indexToMove < this.elements; indexToMove++) {
             this.array[indexToMove] = this.array[indexToMove + 1];
         }
@@ -45,9 +45,13 @@ export class MyArray {
     }
 
     display() {
-        for (let index = 0; index < this.array.length; index++) {
+        for (let index = 0; index < this.elements; index++) {
             console.log(this.array[index]);
         }
+    }
+
+    size() : number {
+        return this.elements;
     }
 
 }

@@ -1,4 +1,4 @@
-import { MyArray } from "./myarray";
+import { MyArray } from "./my-array";
 
 var myArray = new MyArray(15);
 
