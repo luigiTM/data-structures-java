@@ -27,7 +27,7 @@ export class OrderedArray {
         let upperBound = this.elements - 1;
         let index: number;
         while (true) {
-            index = (lowerBound + upperBound) / 2;
+            index = Math.round((lowerBound + upperBound) / 2);
             if (this.array[index] === value) {
                 return index;
             } else if (lowerBound > upperBound) {

@@ -1,12 +1,27 @@
 {
-    "name": "vscode-typescript-debugging",
-    "version": "1.0.0",
-    "devDependencies": {
-      "typescript": "^2.7.2"
-    },
-    "scripts": {
-      "start": "node out/app.js",
-      "prestart": "npm run build",
-      "build": "tsc"
-    }
-  }
+  "name": "data-structure-typescript",
+  "version": "1.0.0",
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "start": "node out/app.js",
+    "prestart": "npm run build",
+    "build": "tsc"
+  },
+  "main": "app.ts",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luigiTM/data-structures-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luigiTM/data-structures-typescript/issues"
+  },
+  "homepage": "https://github.com/luigiTM/data-structures-typescript#readme",
+  "description": ""
+}
