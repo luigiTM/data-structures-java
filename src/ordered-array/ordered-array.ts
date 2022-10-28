@@ -1,14 +1,14 @@
 export class OrderedArray {
 
-    array: Array<Number>;
+    array: Array<number>;
     elements: number;
 
-    constructor(size: Number) {
-        this.array = new Array<Number>(size)
+    constructor(size: number) {
+        this.array = new Array<number>(size)
         this.elements = 0;
     }
 
-    insert(value: Number) {
+    insert(value: number) {
         let index: number;
         for (index = 0; index < this.elements; index++) {
             if (this.array[index] > value) {
@@ -22,7 +22,7 @@ export class OrderedArray {
         this.elements++;
     }
 
-    find(value: Number): number {
+    find(value: number): number {
         let lowerBound = 0;
         let upperBound = this.elements - 1;
         let index: number;
@@ -42,7 +42,7 @@ export class OrderedArray {
         }
     }
 
-    delete(value: Number): boolean {
+    delete(value: number): boolean {
         let elementIndex = this.find(value);
         if (elementIndex === -1) {
             return false;

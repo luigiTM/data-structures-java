@@ -1,19 +1,19 @@
 export class MyArray {
 
-    array: Array<Number>;
+    array: Array<number>;
     elements: number;
 
-    constructor(size: Number) {
-        this.array = new Array<Number>(size)
+    constructor(size: number) {
+        this.array = new Array<number>(size)
         this.elements = 0;
     }
 
-    insert(value: Number) {
+    insert(value: number) {
         this.array[this.elements] = value;
         this.elements++;
     }
 
-    find(value: Number): boolean {
+    find(value: number): boolean {
         let index: number;
         for (index = 0; index < this.elements; index++) {
             if (this.array[index] === value) {
@@ -26,7 +26,7 @@ export class MyArray {
         return true;
     }
 
-    delete(value: Number): boolean {
+    delete(value: number): boolean {
         let index: number;
         for (index = 0; index < this.elements; index++) {
             if (this.array[index] === value) {
