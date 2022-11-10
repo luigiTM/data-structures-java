@@ -1,3 +1,3 @@
-import { run } from "./ordered-array/ordered-array-app";
+import { executar } from "./vetor-ordenado/vetor-ordenado-app";
 
-run();
+executar();

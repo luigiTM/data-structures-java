@@ -6,7 +6,7 @@
   },
   "scripts": {
     "start": "node out/app.js",
-    "prestart": "npm run build",
+    "prestart": "npm executar build",
     "build": "tsc"
   },
   "main": "app.ts",
