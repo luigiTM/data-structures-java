@@ -9,54 +9,54 @@ export class VetorOrdenado {
     }
 
     inserir(valor: number) {
-        let index: number;
-        for (index = 0; index < this.elementos; index++) {
-            if (this.vetor[index] > valor) {
+        let indice: number;
+        for (indice = 0; indice < this.elementos; indice++) {
+            if (this.vetor[indice] > valor) {
                 break;
             }
         }
-        for (let indexToMove = this.elementos; indexToMove > index; indexToMove--) {
-            this.vetor[indexToMove] = this.vetor[indexToMove - 1]
+        for (let indiceParaDeslocar = this.elementos; indiceParaDeslocar > indice; indiceParaDeslocar--) {
+            this.vetor[indiceParaDeslocar] = this.vetor[indiceParaDeslocar - 1]
         }
-        this.vetor[index] = valor;
+        this.vetor[indice] = valor;
         this.elementos++;
     }
 
     encontrar(valor: number): number {
         let limiteInferior = 0;
         let limiteSuperior = this.elementos - 1;
-        let index: number;
+        let indice: number;
         while (true) {
-            index = Math.round((limiteInferior + limiteSuperior) / 2);
-            if (this.vetor[index] === valor) {
-                return index;
+            indice = Math.round((limiteInferior + limiteSuperior) / 2);
+            if (this.vetor[indice] === valor) {
+                return indice;
             } else if (limiteInferior > limiteSuperior) {
                 return -1;
             } else {
-                if (this.vetor[index] < valor) {
-                    limiteInferior = index + 1;
+                if (this.vetor[indice] < valor) {
+                    limiteInferior = indice + 1;
                 } else {
-                    limiteSuperior = index - 1;
+                    limiteSuperior = indice - 1;
                 }
             }
         }
     }
 
     remover(valor: number): boolean {
-        let indexDoElemento = this.encontrar(valor);
-        if (indexDoElemento === -1) {
+        let indiceDoElemento = this.encontrar(valor);
+        if (indiceDoElemento === -1) {
             return false;
         }
-        for (let index = indexDoElemento; index < this.elementos; index++) {
-            this.vetor[index] = this.vetor[index + 1];
+        for (let indice = indiceDoElemento; indice < this.elementos; indice++) {
+            this.vetor[indice] = this.vetor[indice + 1];
         }
         this.elementos--;
         return true;
     }
 
     mostrar() {
-        for (let index = 0; index < this.elementos; index++) {
-            console.log(this.vetor[index]);
+        for (let indice = 0; indice < this.elementos; indice++) {
+            console.log(this.vetor[indice]);
         }
     }
 

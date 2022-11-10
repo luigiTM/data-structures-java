@@ -14,39 +14,39 @@ export class Vetor {
     }
 
     encontrar(valor: number): boolean {
-        let index: number;
-        for (index = 0; index < this.elementos; index++) {
-            if (this.vetor[index] === valor) {
+        let indice: number;
+        for (indice = 0; indice < this.elementos; indice++) {
+            if (this.vetor[indice] === valor) {
                 break;
             }
         }
-        if (index === this.elementos) {
+        if (indice === this.elementos) {
             return false;
         }
         return true;
     }
 
     remover(valor: number): boolean {
-        let index: number;
-        for (index = 0; index < this.elementos; index++) {
-            if (this.vetor[index] === valor) {
+        let indice: number;
+        for (indice = 0; indice < this.elementos; indice++) {
+            if (this.vetor[indice] === valor) {
                 break;
             }
         }
-        if (index === this.elementos) {
+        if (indice === this.elementos) {
             return false;
         }
-        let indexParaDeslocar: number;
-        for (indexParaDeslocar = index; indexParaDeslocar < this.elementos; indexParaDeslocar++) {
-            this.vetor[indexParaDeslocar] = this.vetor[indexParaDeslocar + 1];
+        let indiceParaDeslocar: number;
+        for (indiceParaDeslocar = indice; indiceParaDeslocar < this.elementos; indiceParaDeslocar++) {
+            this.vetor[indiceParaDeslocar] = this.vetor[indiceParaDeslocar + 1];
         }
         this.elementos--;
         return true;
     }
 
     mostrar() {
-        for (let index = 0; index < this.elementos; index++) {
-            console.log(this.vetor[index]);
+        for (let indice = 0; indice < this.elementos; indice++) {
+            console.log(this.vetor[indice]);
         }
     }
 
