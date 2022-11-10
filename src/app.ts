@@ -1,3 +1,3 @@
-import { executar } from "./ordenacao-simples/vetor-bolha-app";
+import { executar } from "./ordenacao-simples/ordenacao-selecao/vetor-selecao-app";
 
 executar();
