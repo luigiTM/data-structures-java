@@ -3,8 +3,8 @@ export class Vetor {
     vetor: Array<number>;
     elementos: number;
 
-    constructor(size: number) {
-        this.vetor = new Array<number>(size)
+    constructor(tamanho: number) {
+        this.vetor = new Array<number>(tamanho)
         this.elementos = 0;
     }
 
@@ -50,7 +50,7 @@ export class Vetor {
         }
     }
 
-    size() : number {
+    tamanho() : number {
         return this.elementos;
     }
 

@@ -3,8 +3,8 @@ export class VetorOrdenado {
     vetor: Array<number>;
     elementos: number;
 
-    constructor(size: number) {
-        this.vetor = new Array<number>(size)
+    constructor(tamanho: number) {
+        this.vetor = new Array<number>(tamanho)
         this.elementos = 0;
     }
 
