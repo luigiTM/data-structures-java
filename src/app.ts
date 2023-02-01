@@ -1,3 +1,3 @@
-import { executar } from "./ordenacao-simples/ordenacao-insercao/vetor-insercao-app";
+import { executar } from "./pilha/pilha-app";
 
 executar();
