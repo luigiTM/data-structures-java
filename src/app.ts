@@ -1,3 +1,3 @@
-import { executar } from "./pilha/pilha-app";
+import { executar } from "./fila/fila-app";
 
 executar();

@@ -4,9 +4,9 @@ export class Pilha {
     vetor: Array<number>;
     topo: number;
 
-    constructor(tamanhoMaximo: number) {
-        this.tamanhoMaximo = tamanhoMaximo;
-        this.vetor = new Array<number>(tamanhoMaximo);
+    constructor(tamanho: number) {
+        this.tamanhoMaximo = tamanho;
+        this.vetor = new Array<number>(tamanho);
         this.topo = -1;
     }
 
