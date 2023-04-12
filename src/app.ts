@@ -5,6 +5,7 @@ import { executar as insercaoExecutar } from "./ordenacao-simples/ordenacao-inse
 import { executar as selecaoExecutar } from "./ordenacao-simples/ordenacao-selecao/vetor-selecao-app";
 import { executar as executarPilha } from "./pilha/pilha-app";
 import { executar as executarFila } from "./fila/fila-app";
+import { executar as executarListaEncadeada } from "./lista-encadeada/lista-encadeada-app";
 
 vetorExecutar();
 vetorOrdenadoExecutar();
@@ -13,3 +14,4 @@ insercaoExecutar();
 selecaoExecutar();
 executarPilha();
 executarFila();
+executarListaEncadeada();
